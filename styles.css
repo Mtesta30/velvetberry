@@ -122,7 +122,7 @@ section::after {
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 74px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,10 +182,17 @@ section::after {
 .hero-content {
   position: relative;
   z-index: 3;
-  text-align: center;
-  padding: 6rem 1.5rem 8rem;
-  max-width: 740px;
+  padding: 6rem 1.5rem 6rem;
+  max-width: 1200px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: left;
 }
 
 .hero-eyebrow {
@@ -237,9 +244,54 @@ section::after {
 .hero-buttons {
   display: flex;
   gap: 1rem;
-  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+  justify-content: flex-start;
+}
+
+.hero-visual {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 28px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.1), 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-visual .visual-card {
+  background: rgba(245, 237, 224, 0.9);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+  border: 1px solid rgba(160, 80, 104, 0.2);
+}
+
+.hero-jar {
+  width: 100%;
+  height: 180px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(74, 34, 24, 0.7) 100%);
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.hero-jar::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border-radius: 20px;
+  background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.8), transparent 60%);
+}
+
+.hero-visual p {
+  margin: 0;
+  color: rgba(74, 34, 24, 0.85);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .btn-primary,
@@ -278,6 +330,7 @@ section::after {
   transform: translateY(-2px);
 }
 
+.hero-logo-wrap {
 .hero-logo-wrap {
   margin-top: 3rem;
   display: flex;
@@ -320,7 +373,7 @@ section::after {
 .price-badge {
   position: absolute;
   right: clamp(1rem, 6vw, 5rem);
-  bottom: clamp(5rem, 12vw, 9rem);
+  bottom: clamp(4rem, 10vw, 8rem);
   background: var(--accent);
   color: var(--secondary);
   border-radius: 50%;
@@ -597,10 +650,9 @@ section::after {
   letter-spacing: 0.06em;
 }
 
-.mission-section,
-.contact-section {
-  background: var(--accent);
-  color: var(--secondary);
+.mission-section {
+  background: linear-gradient(180deg, rgba(245, 237, 224, 0.95), rgba(232, 213, 176, 0.9));
+  color: var(--accent);
   border-radius: 40px;
   padding: 4rem 1.5rem;
 }
@@ -618,17 +670,17 @@ section::after {
 }
 
 .mission-card {
-  background: rgba(245, 237, 224, 0.06);
-  border: 1px solid rgba(245, 237, 224, 0.14);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 24px;
   padding: 2rem;
-  backdrop-filter: blur(8px);
-  transition: background 0.3s ease, transform 0.35s ease;
+  border: 1px solid rgba(160, 80, 104, 0.15);
+  box-shadow: 0 12px 28px rgba(74, 34, 24, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .mission-card:hover {
-  background: rgba(245, 237, 224, 0.1);
   transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(74, 34, 24, 0.12);
 }
 
 .mission-card-icon {
@@ -638,17 +690,15 @@ section::after {
 }
 
 .mission-card h3 {
-  color: var(--sand);
-  font-size: 1.3rem;
-  margin-bottom: 0.75rem;
+  color: var(--accent);
   font-style: italic;
+  margin-bottom: 0.75rem;
 }
 
 .mission-card p {
-  color: rgba(245, 237, 224, 0.82);
-  font-size: 0.93rem;
-  margin: 0;
-  line-height: 1.8;
+  color: rgba(74, 34, 24, 0.85);
+  font-size: 0.95rem;
+  line-height: 1.7;
 }
 
 .valores-list {
@@ -676,9 +726,35 @@ section::after {
 }
 
 .valores-list strong {
-  color: var(--sand);
+  color: var(--accent);
   display: block;
   font-size: 0.95rem;
+}
+
+.mission-extra {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.mission-extra article {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 1.5rem;
+  border: 1px solid rgba(160, 80, 104, 0.15);
+  box-shadow: 0 8px 20px rgba(74, 34, 24, 0.08);
+}
+
+.mission-extra h4 {
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.mission-extra p {
+  margin: 0;
+  color: rgba(74, 34, 24, 0.8);
+  line-height: 1.6;
 }
 
 .contact-inner {
