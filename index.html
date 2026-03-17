@@ -11,7 +11,7 @@
       <div class="nav-inner">
         <div class="nav-logo">Velvet <span>Berry</span></div>
         <div class="nav-links">
-          <a href="index.html">Inicio</a>
+          <a href="index.html" class="active">Inicio</a>
           <a href="producto.html">Producto</a>
           <a href="mision.html">Nosotros</a>
           <a href="contacto.html">Contacto</a>
@@ -20,6 +20,7 @@
     </nav>
 
     <main>
+      <!-- HERO — untouched -->
       <section class="hero" id="hero">
         <div class="hero-circle hero-circle-1"></div>
         <div class="hero-circle hero-circle-2"></div>
@@ -33,8 +34,7 @@
             </h1>
             <p class="hero-tagline">Pequeñas joyas recubiertas de chocolate</p>
             <p class="hero-description">
-              Frambuesas frescas, congeladas en su punto perfecto y bañadas en chocolate artesanal. Una experiencia
-              que se derrite en tu boca y deja un aroma inolvidable.
+              Frambuesas frescas, congeladas en su punto perfecto y bañadas en chocolate artesanal. Una experiencia que se derrite en tu boca y deja un aroma inolvidable.
             </p>
             <div class="hero-buttons">
               <a class="btn-primary" href="contacto.html">¡Quiero mi tarro!</a>
@@ -44,7 +44,7 @@
           <div class="hero-visual">
             <div class="visual-card">
               <div class="hero-jar"></div>
-              <p>Tarro Velvet Berry · 7 Frambuesas congeladas y cubiertas con chocolate artesanal de origen.</p>
+              <p>Tarro Velvet Berry · Frambuesas congeladas cubiertas con chocolate artesanal de origen.</p>
             </div>
             <div class="hero-logo-wrap">
               <div class="logo-ring">
@@ -53,60 +53,80 @@
             </div>
           </div>
         </div>
-        <svg
-          class="drip-top"
-          viewBox="0 0 1440 80"
-          preserveAspectRatio="none"
-          fill="var(--secondary)"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0,40 Q120,80 240,40 Q360,0 480,40 Q600,80 720,40 Q840,0 960,40 Q1080,80 1200,40 Q1320,0 1440,40 L1440,80 L0,80 Z"
-          />
-          <ellipse cx="180" cy="75" rx="8" ry="18" />
-          <ellipse cx="420" cy="72" rx="6" ry="14" />
-          <ellipse cx="680" cy="76" rx="9" ry="20" />
-          <ellipse cx="930" cy="73" rx="7" ry="16" />
-          <ellipse cx="1200" cy="75" rx="8" ry="18" />
+        <svg class="drip-top" viewBox="0 0 1440 80" preserveAspectRatio="none" fill="var(--secondary)" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,40 Q120,80 240,40 Q360,0 480,40 Q600,80 720,40 Q840,0 960,40 Q1080,80 1200,40 Q1320,0 1440,40 L1440,80 L0,80 Z"/>
+          <ellipse cx="180" cy="75" rx="8" ry="18"/>
+          <ellipse cx="420" cy="72" rx="6" ry="14"/>
+          <ellipse cx="680" cy="76" rx="9" ry="20"/>
+          <ellipse cx="930" cy="73" rx="7" ry="16"/>
+          <ellipse cx="1200" cy="75" rx="8" ry="18"/>
         </svg>
       </section>
 
+      <!-- MOMENTOS VELVET -->
       <section class="reference-section fade-in" data-animate>
-        <h3>Tu momento Velvet</h3>
-        <p>
-          Inspirados en la calidez de los mercados y el ritmo de Franui, celebramos cada mordisco como una
-          experiencia sensorial que te invita a ser fiel a tus antojos.
-        </p>
+        <span class="section-eyebrow">Cada momento merece algo especial</span>
+        <h3 class="section-heading">Tu momento Velvet</h3>
+        <p class="section-lead">Inspirados en la calidez de los mercados y el ritmo de Colombia, celebramos cada mordisco como una experiencia sensorial que te invita a ser fiel a tus antojos.</p>
         <div class="reference-grid">
-          <article class="reference-card">
-            <span>Miércoles</span>
+          <article class="reference-card fade-in" data-animate>
+            <span class="day-label">Miércoles</span>
             <h4>Choco frescura</h4>
-            <p>Una frambuesa tibia insertada en chocolate oscuro que despierta la tarde.</p>
+            <p>Una frambuesa congelada con chocolate oscuro que despierta la tarde y reconforta el ánimo.</p>
           </article>
-          <article class="reference-card">
-            <span>Viernes</span>
+          <article class="reference-card fade-in delay-1" data-animate>
+            <span class="day-label">Viernes</span>
             <h4>Carcajada rosada</h4>
-            <p>El toque ácido del fruto le da alegría a tu cierre de semana.</p>
+            <p>El toque ácido del fruto le da alegría a tu cierre de semana. Compártelo o disfrútalo solo.</p>
           </article>
-          <article class="reference-card">
-            <span>Sábado</span>
+          <article class="reference-card fade-in delay-2" data-animate>
+            <span class="day-label">Sábado</span>
             <h4>Brillo artesanal</h4>
-            <p>Chocolate brillante que abraza la pulpa como una joya.</p>
+            <p>Chocolate brillante que abraza la pulpa como una joya. Hecho con amor cada fin de semana.</p>
           </article>
-          <article class="reference-card">
-            <span>Domingo</span>
+          <article class="reference-card fade-in delay-3" data-animate>
+            <span class="day-label">Domingo</span>
             <h4>Abrazo de sabor</h4>
-            <p>Tarros que se disfrutan en familia, entregados con cariño colombiano.</p>
+            <p>Tarros que se disfrutan en familia, entregados con cariño y el sello artesanal colombiano.</p>
           </article>
         </div>
         <div class="reference-cta">
-          <a href="contacto.html">Quiero una celebración</a>
+          <a class="btn-dark" href="contacto.html">Quiero ordenar</a>
         </div>
       </section>
     </main>
 
     <footer>
-      © 2025 Velvet Berry · Pequeñas joyas recubiertas de chocolate · Hecho con amor en Bogotá
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div>
+            <span class="footer-brand-name">Velvet Berry</span>
+            <p class="footer-tagline">Pequeñas joyas recubiertas de chocolate</p>
+            <p class="footer-desc">Frambuesas 100% naturales, cubiertas de chocolate artesanal y entregadas con amor desde Bogotá, Colombia.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Páginas</h5>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="producto.html">Nuestro producto</a></li>
+              <li><a href="mision.html">Nosotros</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Contacto</h5>
+            <ul>
+              <li><a href="https://wa.me/573118445151">WhatsApp: 311 844 5151</a></li>
+              <li><a href="https://instagram.com/velvetberry">@velvetberry</a></li>
+              <li><a href="#">Bogotá, Colombia</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2025 <strong>Velvet Berry</strong> · Todos los derechos reservados</span>
+          <span>Hecho con 🍓 y amor en Colombia</span>
+        </div>
+      </div>
     </footer>
 
     <script src="scripts.js"></script>

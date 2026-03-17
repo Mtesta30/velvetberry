@@ -23,6 +23,4 @@ Este repositorio contiene el sitio de **Velvet Berry** organizado en páginas in
 
 Puedes abrir cualquiera de los HTML en el navegador o ejecutar un servidor estático (`npx http-server`, `python -m http.server`, etc.) y navegar entre las páginas mediante los enlaces.
 
-## Contacto
 
-📱 311 844 5151 · Instagram: `@velvetberry`

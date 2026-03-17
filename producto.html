@@ -12,7 +12,7 @@
         <div class="nav-logo">Velvet <span>Berry</span></div>
         <div class="nav-links">
           <a href="index.html">Inicio</a>
-          <a href="producto.html">Producto</a>
+          <a href="producto.html" class="active">Producto</a>
           <a href="mision.html">Nosotros</a>
           <a href="contacto.html">Contacto</a>
         </div>
@@ -20,72 +20,147 @@
     </nav>
 
     <main>
-      <section id="producto" data-animate class="fade-in">
-        <span class="section-label">Nuestro producto</span>
-        <h2 class="section-title">El tarro que lo tiene todo</h2>
-        <p class="section-subtitle">
-          Frambuesas seleccionadas, chocolate artesanal y acabados hechos a mano para que cada tarro sea una
-          experiencia fiel a Velvet Berry.
-        </p>
-        <div class="features-grid">
-          <article class="feature-card">
-            <span class="feature-icon"></span>
-            <div class="accent-text">Chocolate artesanal</div>
-            <p>Cobertura cremosa y brillante que protege cada frambuesa sin opacar su acidez natural.</p>
+      <!-- PAGE BANNER -->
+      <div class="page-banner">
+        <div class="pb-circle pb-circle-1"></div>
+        <div class="pb-circle pb-circle-2"></div>
+        <div class="page-banner-content">
+          <span class="page-banner-eyebrow">Nuestro producto</span>
+          <h1>El tarro que <em>lo tiene todo</em></h1>
+          <p>Frambuesas seleccionadas, chocolate artesanal y acabados hechos a mano para que cada tarro sea una experiencia fiel a Velvet Berry.</p>
+        </div>
+        <svg class="page-banner-drip" viewBox="0 0 1440 70" preserveAspectRatio="none" fill="var(--secondary)" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,35 Q120,70 240,35 Q360,0 480,35 Q600,70 720,35 Q840,0 960,35 Q1080,70 1200,35 Q1320,0 1440,35 L1440,70 L0,70 Z"/>
+          <ellipse cx="200" cy="65" rx="7" ry="16"/>
+          <ellipse cx="500" cy="62" rx="6" ry="13"/>
+          <ellipse cx="760" cy="66" rx="8" ry="18"/>
+          <ellipse cx="1020" cy="63" rx="6" ry="14"/>
+          <ellipse cx="1280" cy="65" rx="7" ry="16"/>
+        </svg>
+      </div>
+
+      <!-- FEATURES STRIP -->
+      <div class="content-wrap">
+        <div class="features-strip">
+          <article class="feature-card fade-in" data-animate>
+            <span class="feature-icon">🍫</span>
+            <h3>Chocolate artesanal</h3>
+            <p>Cobertura cremosa y brillante que protege cada frambuesa sin opacar su acidez natural. Origen colombiano, 62% cacao.</p>
           </article>
-          <article class="feature-card">
-            <span class="feature-icon"></span>
-            <div class="accent-text">Fruta real</div>
-            <p>Frambuesas 100% naturales, lavadas y congeladas en el mismo lote para preservar aroma y textura.</p>
+          <article class="feature-card fade-in delay-1" data-animate>
+            <span class="feature-icon">🫐</span>
+            <h3>Fruta real</h3>
+            <p>Frambuesas 100% naturales, lavadas y seleccionadas en el mismo lote para preservar aroma, forma y textura perfecta.</p>
           </article>
-          <article class="feature-card">
-            <span class="feature-icon"></span>
-            <div class="accent-text">Congelación inmediata</div>
-            <p>Procedimiento criogénico que bloquea el sabor, la forma y el color desde el primer segundo.</p>
+          <article class="feature-card fade-in delay-2" data-animate>
+            <span class="feature-icon">❄️</span>
+            <h3>Congeladas al instante</h3>
+            <p>Proceso de congelación que bloquea sabor, color y forma desde el primer segundo. Frescura garantizada en cada bocado.</p>
           </article>
         </div>
+
+        <!-- PRODUCT SHOWCASE -->
         <div class="product-showcase fade-in" data-animate>
           <div class="product-image-wrap">
             <img src="franuis-portada.png" alt="Frambuesas cubiertas de chocolate Velvet Berry" />
           </div>
           <div class="product-info">
-            <span class="section-label">Disponible ahora</span>
-            <h3 class="product-title">Tarro Velvet Berry</h3>
+            <span class="section-eyebrow">Disponible ahora</span>
+            <h2 class="product-title">Tarro Velvet Berry</h2>
             <p class="product-description">
-              Frambuesas cubiertas con chocolate oscuro de origen colombiano, presentadas en un tarro elegante que
-              mantiene la frescura y brilla en la mesa.
+              Frambuesas cubiertas con chocolate oscuro de origen colombiano, presentadas en un tarro elegante que mantiene la frescura y brilla en la mesa. Una combinación perfecta entre lo ácido de la fruta y lo dulce del cacao artesanal.
             </p>
+            <div class="product-specs">
+              <div class="spec-row">
+                <span class="spec-label">Presentación</span>
+                <span class="spec-value">Tarro 90 g</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Empaque</span>
+                <span class="spec-value">Vidrio reutilizable · sello metálico</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Sabor destacado</span>
+                <span class="spec-value">Frambuesa madura + chocolate 62%</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Conservación</span>
+                <span class="spec-value">Mantener congelado</span>
+              </div>
+            </div>
             <div class="product-price-row">
               <span class="product-price">$8.500</span>
               <span class="product-price-unit">COP por tarro</span>
             </div>
-            <div class="detail-row">
-              <span class="detail-label">Presentación</span>
-              <span>Tarro 90 g</span>
-            </div>
-            <div class="detail-row">
-              <span class="detail-label">Empaque</span>
-              <span>Vidrio reutilizable con sello metálico</span>
-            </div>
-            <div class="detail-row">
-              <span class="detail-label">Sabor destacado</span>
-              <span>Frambuesa madura + chocolate 62%</span>
-            </div>
             <div class="product-tags">
-              <span class="tag">Natural</span>
-              <span class="tag">Congelado</span>
-              <span class="tag">Chocolate artesanal</span>
-              <span class="tag">Lista para regalar</span>
+              <span class="tag">🌿 Natural</span>
+              <span class="tag">❄️ Congelado</span>
+              <span class="tag">🍫 Chocolate 62%</span>
+              <span class="tag">🤍 Hecho a mano</span>
+              <span class="tag">🎁 Lista para regalar</span>
             </div>
-            <a class="btn-primary" href="contacto.html">Pedir ahora</a>
+            <a class="btn-dark" href="contacto.html">Pedir ahora</a>
           </div>
         </div>
-      </section>
+
+        <!-- BENEFITS BAND -->
+        <div class="benefits-band fade-in" data-animate>
+          <span class="section-eyebrow">¿Por qué Velvet Berry?</span>
+          <h2 class="section-heading">Lo que nos hace únicos</h2>
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <span class="benefit-icon">🏔️</span>
+              <h4>Fruta de altura</h4>
+              <p>Seleccionamos frambuesas cultivadas en zonas de altura para garantizar la mayor concentración de sabor y aroma.</p>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-icon">🤲</span>
+              <h4>Proceso artesanal</h4>
+              <p>Cada tarro se prepara y empaca a mano. Sin líneas de producción masiva. Sin atajos. Pura dedicación.</p>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-icon">🚀</span>
+              <h4>Entrega fresca</h4>
+              <p>Coordinamos cada pedido para que el tarro llegue congelado a tu puerta, en perfectas condiciones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
-      © 2025 Velvet Berry · Pequeñas joyas recubiertas de chocolate · Hecho con amor en Bogotá
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div>
+            <span class="footer-brand-name">Velvet Berry</span>
+            <p class="footer-tagline">Pequeñas joyas recubiertas de chocolate</p>
+            <p class="footer-desc">Frambuesas 100% naturales, cubiertas de chocolate artesanal y entregadas con amor desde Bogotá, Colombia.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Páginas</h5>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="producto.html">Nuestro producto</a></li>
+              <li><a href="mision.html">Nosotros</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Contacto</h5>
+            <ul>
+              <li><a href="https://wa.me/573118445151">WhatsApp: 311 844 5151</a></li>
+              <li><a href="https://instagram.com/velvetberry">@velvetberry</a></li>
+              <li><a href="#">Bogotá, Colombia</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2025 <strong>Velvet Berry</strong> · Todos los derechos reservados</span>
+          <span>Hecho con 🍓 y amor en Colombia</span>
+        </div>
+      </div>
     </footer>
+
     <script src="scripts.js"></script>
   </body>
 </html>
